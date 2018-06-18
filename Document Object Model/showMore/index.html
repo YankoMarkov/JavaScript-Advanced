@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show More</title>
+</head>
+<body>
+Welcome to the "Show More Text Example".
+<a href="#" id="more" onclick="showText()">Read more …</a>
+<span id="text" style="display:none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+<script>
+	function showText() {
+		let text = document.getElementById("text");
+		text.style.display = "inline";
+		document.getElementById("more").style.display = "none";
+	}
+</script>
+
+</body>
+</html>
